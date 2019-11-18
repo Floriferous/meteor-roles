@@ -136,7 +136,6 @@ if (Roles.userIsInRole(joesUserId, ['manage-team', 'super-admin'], 'real-madrid.
 
   1. A new collection `Meteor.roleAssignment` contains the information which role has been assigned to which user.
   1. A new collection `Meteor.roles` contains a global list of defined role names.
-  1. All existing roles are automatically published to the client.
 
 <br />
 
