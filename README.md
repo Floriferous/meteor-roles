@@ -107,6 +107,13 @@ But scopes are independent from each other. Users can have one set of roles in s
 of roles in scope B. Let's go through an example of this using soccer/football teams as scopes.
 
 ```javascript
+/**
+ * Roles.addUsersToRoles
+ * @param {string|string[]} userId - A userId, or an array of userIds.
+ * @param {string|string[]} roles - A role, or an array of roles.
+ * @param {string=} scope - An optional scope under which to assign the roles.
+ */
+
 Roles.addUsersToRoles(joesUserId, ['manage-team','schedule-game'], 'manchester-united.com');
 Roles.addUsersToRoles(joesUserId, ['player','goalie'], 'real-madrid.com');
 
